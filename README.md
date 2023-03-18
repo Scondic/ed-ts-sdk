@@ -25,7 +25,11 @@ $ pnpm add @scondic/easydonate-sdk
 ```
 
 ```typescript
-const client = new EasyDonateApiClient('0cbed40c0d920b94126eaf5e707be1f5');
+// После установки пакета вы можете импортировать библиотеку с помощью import:
+import { EasyDonateApiClient } from '@scondic/easydonate-sdk';
+
+// Создание инстанса   
+const client = new EasyDonateApiClient('0cbed40c0d920b94126eaa5e707be1f5');
 
 // Получение данных о серверах
 client.getAllServers().then((data) => console.log('servers ', data));

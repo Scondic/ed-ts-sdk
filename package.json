@@ -1,6 +1,6 @@
 {
   "name": "@scondic/easydonate-sdk",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "EasyDonate TypeScript SDK — это TypeScript-библиотека для взаимодействия с API EasyDonate",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
