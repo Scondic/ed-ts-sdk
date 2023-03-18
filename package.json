@@ -1,12 +1,15 @@
 {
   "name": "@scondic/easydonate-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "EasyDonate TypeScript SDK — это TypeScript-библиотека для взаимодействия с API EasyDonate",
-  "main": "build/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "start": "node ./build/index.js",
-    "dev": "pnpm run build && pnpm run start"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "start": "node ./dist/index.js",
+    "dev": "pnpm run dist && pnpm run start",
+    "lint": "tsc"
   },
   "keywords": [],
   "author": "Вадим Терентьев",
