@@ -17,6 +17,6 @@ jobs:
           node-version: 16.x
           cache: 'pnpm'
 
-      - run: pnpm i tsup -g
+      - run: pnpm i tsup typescript -g
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint && pnpm run build
